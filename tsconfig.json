@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "ES2019", //Em qual ambiente vai ser executado. Versão do TS.
+        "module": "CommonJS", //Esquema de módulos do Node.
+        "lib": ["DOM", "ESNext"], //Bibliotecas necessárias.
+        "outDir": "./dist", //Em qual pasta vai ser complicado, utilizei o padrão.
+        "rootDir": "./src", //Pasta root do meu projeto.
+        "removeComments": true, //Remove comentários do código compilado.
+        "noEmitOnError": true, //Não quero emitir códigos compilados com erros.
+        "strict": true, //Quero trabalhar no ambiente mais estríto do TS.
+        "esModuleInterop": true, //Interação entre o CommonJS e ESModules.
+        "skipLibCheck": true, //Pular a checagem de arquivos .D ou .TS, acelerar a compilação.
+        "forceConsistentCasingInFileNames": true //Não deixar nomes inconsistentes nos arquivos.
+    },
+    "include": [
+        "./src" //Checar somente essa pasta.
+    ]
+}
